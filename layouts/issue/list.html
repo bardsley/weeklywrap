@@ -1,0 +1,32 @@
+<h2>{{ .Title }}</h2>
+<p>Layouts -> Issue -> List</p>
+
+{{ .Content }}
+
+<h2>Pictures</h2>
+{{ range .Resources.ByType "image" }}
+  {{ .Title }} 
+  <img src="data:{{ .MediaType.Type }};base64,{{ .Content | base64Encode }}">
+{{ end }}
+
+<h2>Docs</h2>
+
+{{ range .Resources.Match "*.md" }}
+  <p>{{ .Title }} </p>
+{{ end }}
+
+<h2>Breadcrumbs</h2>
+<nav aria-label="breadcrumb" class="breadcrumb">
+  <ol>
+    {{ range .Ancestors.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      </li>
+    {{ end }}
+    <li class="active">
+      <a aria-current="page" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+  </ol>
+</nav>
+
+<pre>{{ .Params }}</pre>
