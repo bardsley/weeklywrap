@@ -1,0 +1,105 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "event",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "artist",
+          "name": "artist",
+          "type": "string"
+        },
+        {
+          "title": "location",
+          "name": "location",
+          "type": "string"
+        },
+        {
+          "title": "time",
+          "name": "time",
+          "type": "string"
+        },
+        {
+          "title": "price",
+          "name": "price",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "map_url",
+          "name": "map_url",
+          "type": "string"
+        },
+        {
+          "title": "params",
+          "name": "params",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "salsa",
+              "name": "salsa",
+              "type": "string"
+            },
+            {
+              "title": "bachata",
+              "name": "bachata",
+              "type": "string"
+            },
+            {
+              "title": "kizomba",
+              "name": "kizomba",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "issue",
+      "pageBundle": false,
+      "template": "[[workspace]]/archetypes/issue.md"
+    }
+  ],
+  "frontMatter.git.enabled": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Issues",
+      "path": "[[workspace]]/content/issue",
+      "contentTypes": [
+        "issue"
+      ],
+      "filePrefix": "",
+      "excludeSubDir": true
+    },
+    {
+      "title": "Monday",
+      "path": "[[workspace]]/content/issue/2024-05-13/mon",
+      "contentTypes": [
+        "event"
+      ],
+      "filePrefix": "",
+      "excludeSubDir": true
+    }
+  ]
+}
