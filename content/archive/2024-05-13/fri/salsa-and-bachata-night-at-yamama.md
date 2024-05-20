@@ -6,7 +6,7 @@ time = "7:30pm - 12pm"
 price = "FREE"
 date = "2024-05-06"
 draft = false
-
+type = "event"
 [params]
 salsa = "primary"
 bachata = "primary"

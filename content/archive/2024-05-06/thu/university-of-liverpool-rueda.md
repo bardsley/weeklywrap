@@ -6,7 +6,7 @@ time = "7:30pm - 9:30pm"
 price = "£3.50 - £5"
 date = "2024-05-06"
 draft = false
-
+type = "event"
 [params]
 salsa = "primary"
 map_url = "https://maps.app.goo.gl/ZUdYMd21TTex7hVZA"
