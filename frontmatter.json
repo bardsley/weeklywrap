@@ -47,6 +47,19 @@
           "type": "string"
         },
         {
+          "title": "facebook_url",
+          "name": "facebook_url",
+          "type": "string"
+        },{
+          "title": "instagram_url",
+          "name": "instagram_url",
+          "type": "string"
+        },{
+          "title": "website_url",
+          "name": "website_url",
+          "type": "string"
+        },
+        {
           "title": "params",
           "name": "params",
           "type": "fields",
@@ -65,6 +78,11 @@
               "title": "kizomba",
               "name": "kizomba",
               "type": "string"
+            },
+            {
+              "title": "other",
+              "name": "Jive",
+              "type": "string"
             }
           ]
         },
@@ -78,28 +96,89 @@
     {
       "name": "issue",
       "pageBundle": false,
-      "template": "[[workspace]]/archetypes/issue.md"
+      "template": "[[workspace]]/archetypes/issue.md",
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "title": "draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
     }
   ],
   "frontMatter.git.enabled": true,
   "frontMatter.content.pageFolders": [
     {
-      "title": "Issues",
-      "path": "[[workspace]]/content/issue",
-      "contentTypes": [
-        "issue"
-      ],
-      "filePrefix": "",
-      "excludeSubDir": true
-    },
-    {
       "title": "Monday",
-      "path": "[[workspace]]/content/issue/2024-05-13/mon",
+      "path": "[[workspace]]/content/issue/latest/mon",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Tuesday",
+      "path": "[[workspace]]/content/issue/latest/tue",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Wednesday",
+      "path": "[[workspace]]/content/issue/latest/wed",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Thursday",
+      "path": "[[workspace]]/content/issue/latest/thu",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Friday",
+      "path": "[[workspace]]/content/issue/latest/fri",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Saturday",
+      "path": "[[workspace]]/content/issue/latest/sat",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Sunday",
+      "path": "[[workspace]]/content/issue/latest/sun",
       "contentTypes": [
         "event"
       ],
-      "filePrefix": "",
-      "excludeSubDir": true
-    }
+      "filePrefix": null
+    },{
+      "title": "This Month",
+      "path": "[[workspace]]/content/issue/latest/month",
+      "contentTypes": [
+        "event"
+      ]
+    },{
+      "title": "Issue",
+      "path": "[[workspace]]/content/issue/latest",
+      "contentTypes": [
+        "issue"
+      ]
+    },
+
   ]
 }
